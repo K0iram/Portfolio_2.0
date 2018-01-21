@@ -5,15 +5,17 @@ import Route from 'react-router-dom/Route'
 
 import AppLayout from './layouts/main'
 import Home from './components/Home'
-
-
-
+import Contact from './components/Contact'
+import Portfolio from './components/Portfolio'
 
 
 const Routes = () => (
   <Router>
     <AppLayout>
+        <Route path="/" exact component={Home} />
         <Route path="/home" component={Home} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/contact" component={Contact} />
     </AppLayout>
   </Router>
 )

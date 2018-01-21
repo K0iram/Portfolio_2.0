@@ -1,0 +1,33 @@
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 960px;
+  padding-top: 35px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+.nav-menu a:hover{
+  color: #808080;
+}
+
+.seperator {
+  border-top: 1px solid #2c2c2c;
+  width: 25px;
+  position: relative;
+  top: 10px;
+}
+
+.active {
+  color: red;
+}

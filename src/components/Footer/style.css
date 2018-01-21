@@ -1,0 +1,8 @@
+.socialLinks ul {
+		display: flex;
+		justify-content: center;
+}
+
+.socialLinks li {
+	margin: 20px;
+}

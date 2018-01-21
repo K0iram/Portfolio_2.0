@@ -1,146 +1,20 @@
-.title {
-  padding-top: 200px;
-  height: 575px;
+.appContainer {
+  min-height: 50vh;
+}
+
+.heroContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+.hero {
+  text-align: center;
+}
+
+.blurbContainer {
+  width: 500px;
   margin: 0 auto;
-}
-
-.title-box {
-  padding: 20px;
-}
-.title-box a {
-  cursor: pointer;
-}
-
-.title-box h1 {
-  padding-top: 15px;
-  font-weight: bold;
-  margin-bottom: 0px;
-}
-
-.title-box h5 {
-  color: #2b2a2a;
-}
-
-.title-box svg {
-  margin-top: 200px;
-  padding: 5px;
-  background-size: 16px 16px;
-  width: 16px;
-  height: 16px;
-  border: 1px solid;
-  border-radius: 50%;
-  display:inline-block;
-  
-  animation: blink 3s ease-in infinite;
-}
-
-.down-arrow svg {
-  padding: 5px;
-  background-size: 16px 16px;
-  width: 16px;
-  height: 16px;
-  border: 1px solid;
-  border-radius: 50%;
-  display:inline-block;
-  fill: #fff;
-  
-  animation: blink 3s ease-in infinite;
-}
-
-
-@keyframes blink {
-  from, to { opacity: 1 }
-  50% { opacity: 0 }
-}
-
-.description p {
-  width: 80%;
-  margin: 0 auto;
-  padding: 5%;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: left;
-}
-
-.description h5 {
-  font-weight: bolder;
-  padding: 20px;
-}
-
-.description {
-  background-color: #232323;
-  color: #fff;
-  height: 801px;
-}
-
-.description img {
-  width: 300px;
-  padding: 20px;
-}
-
-@media(max-width: 800px) {
-  .title {
-    height: 1025px;
-  }
-
-  .description {
-    height: 1025px;
-  }
-
-  .description img {
-    padding: 60px;
-  }
-}
-
-@media(max-width: 425px) {
-  .title {
-  height: 615px;
-  padding-top: 200px;
-  margin: 0 auto;
-  background-image: none;
-  background-color: rgba(255, 255, 255, 0.66);
-  }
-
-  .title-box {
-    margin: 0 0 0 15px;
-    padding: 10px;
-    width: 100%
-  }
-
-  .title-box h1 {
-    padding-top: 15px;
-    font-weight: bold;
-  }
-
-  .title-box h5 {
-    color: #2b2a2a;
-  }
-
-  .description {
-    background-color: #232323;
-    width: 115%;
-    color: #fff;
-    height: 850px;
-  }
-
-  .description p {
-    margin: 0 auto;
-    padding: 5%;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: left;
-  }
-
-  .description h5 {
-    font-weight: bolder;
-  }
-
-  .description img {
-    width: 200px;
-    padding-bottom: 20px;
-  }
-
-  .down-arrow svg {
-    margin-top: 20px;
-  }
+  padding-top: 25px;
+  text-align: center;
 }
