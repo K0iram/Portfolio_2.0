@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
-
-import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor'
+import { Link } from 'react-router-dom'
 
 import './style.css'
 
 
 class Home extends Component {
-  
+
   componentDidMount() {
-    configureAnchors({keepLastAnchorHash: false, scrollDuration: 1000})
+    window.drift.show()
+  }
+  
+  componentWillUnmount() {
+    window.drift.hide()
   }
 
   render() {
@@ -22,7 +25,11 @@ class Home extends Component {
 
         </div>
         <div className="blurb-container">
-          <p>Need a website? <a href="mailto:mk@mariokennedy.com?Subject=I need a website!">Lets talk!</a></p>
+          <p>
+            Need a website? 
+            <br/>    
+            <Link to='/contact'><button>Lets talk!</button></Link>
+          </p>
         </div>
       </div>
     )

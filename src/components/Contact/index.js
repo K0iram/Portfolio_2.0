@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import EmailIcon from './icons/email.svg'
-import PhoneIcon from './icons/phone.svg'
-import LocalIcon from './icons/location.svg'
 
 
 import './style.css'

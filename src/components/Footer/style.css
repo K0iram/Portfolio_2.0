@@ -1,12 +1,16 @@
-.socialLinks ul {
+.social-links {
+	margin-bottom: 20px;
+}
+
+.social-links ul {
 		display: flex;
 		justify-content: center;
 }
 
-.socialLinks li {
+.social-links li {
 	margin: 20px;
 }
 
-.socialLinks li:hover {
+.social-links li:hover {
 	transform: scale(1.08)
 }

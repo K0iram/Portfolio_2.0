@@ -11,7 +11,7 @@ class Footer extends Component {
 
   render() {
     return (
-      <div className="socialLinks">
+      <div className="social-links">
         <ul>
           <li><a href="https://www.github.com/mario7746" target="_blank"><img src={gitHubIcon} alt=""/></a></li>
           <li><a href="https://www.linkedin.com/in/mariokk/" target="_blank"><img src={linkedInIcon} alt=""/></a></li>
