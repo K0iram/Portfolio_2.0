@@ -4,7 +4,7 @@
 .schoolProject-container {
   height: 100%;
   align-items: center;
-  max-width: 650px;
+  max-width: 800px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -23,6 +23,7 @@
 
 .project img {
   height: 200px;
+  width: 380px;
 }
 
 .project-section:first-child{

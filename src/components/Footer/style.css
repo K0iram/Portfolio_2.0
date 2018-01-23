@@ -6,3 +6,7 @@
 .socialLinks li {
 	margin: 20px;
 }
+
+.socialLinks li:hover {
+	transform: scale(1.08)
+}

@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import profilePic from './four_wheeler.png'
-import Mlogo from '../../images/M_logo.png'
 
 import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor'
 

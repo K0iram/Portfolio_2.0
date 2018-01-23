@@ -4,6 +4,7 @@ import Footer from '../../components/Footer'
 
 
 import '../../css/skeleton.css'
+import './App.css'
 
 
 class AppLayout extends Component {
@@ -23,11 +24,9 @@ class AppLayout extends Component {
       return (
           <div className="App">
             <Navigation />
-
             <div className="main-content">
               { this.renderChildren() }
             </div>
-
             <Footer />
           </div>
       );

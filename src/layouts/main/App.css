@@ -1,4 +1,11 @@
 .App {
   text-align: center;
   font-family: raleway, san-sarif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main-content {
+	flex: 1;
 }
