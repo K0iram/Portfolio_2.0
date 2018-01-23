@@ -16,10 +16,10 @@ class Portfolio extends Component {
         <h4 className="section-title">Professional Work</h4>
         <div className="schoolProject-container project-section">
         <div className="project">
-            <a href="https://wicked-mad-libs.herokuapp.com" target='_blank'><img src={Ideaboard} alt="Ideaboards App"/></a>
+            <a href="https://www.wayfair.com/ib/mkmaMBvNPw/0B268073B-3E8E-4B08-AA7D-1D3066CC278D" target='_blank'><img src={Ideaboard} alt="Ideaboards App"/></a>
           </div>
           <div className="project">
-            <a href="https://wicked-mad-libs.herokuapp.com" target='_blank'><img src={NeuroMotion} alt="Mighteor Game"/></a>
+            <a href="https://neuromotionlabs.com/get-mighteor/" target='_blank'><img src={NeuroMotion} alt="Mighteor Game"/></a>
           </div>
         </div>
         <h4 className="section-title">School Work</h4>
