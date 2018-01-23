@@ -1,4 +1,4 @@
-.appContainer {
+.home-container {
   min-height: 45vh;
   height: 500px;
   display: flex;
@@ -6,17 +6,16 @@
   justify-content: center;
 }
 
-.heroContainer {
+.hero-container {
   display: flex;
   justify-content: center;
-  margin-top: 15%;
 }
 
 .hero {
   text-align: center;
 }
 
-.blurbContainer {
+.blurb-container {
   width: 100%;
   margin: 0 auto;
   padding-top: 25px;

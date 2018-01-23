@@ -13,15 +13,15 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="appContainer">
-        <div className="heroContainer">
+      <div className="home-container">
+        <div className="hero-container">
           <div className="hero">
             <h2>Mario Kennedy</h2>
             <h5>Web Developer</h5>
           </div>
 
         </div>
-        <div className="blurbContainer">
+        <div className="blurb-container">
           <p>Need a website? <a href="mailto:mk@mariokennedy.com?Subject=I need a website!">Lets talk!</a></p>
         </div>
       </div>
