@@ -20,7 +20,7 @@
 }
 
 /*
-* Underline links on hover
+* Underline links on active class
 */
 .nav-link p {
   position: relative;
@@ -42,15 +42,11 @@
   transition: all 0.3s ease-in-out 0s;
 }
 
-.nav-link p:hover:before {
-  visibility: visible;
-  background-color: #2c2c2c;
-  transform: scaleX(1);
-}
-
 /*
 * Active class for NavLinks
 */
-.active p {
-  font-weight: 700;
+.active p:before {
+  visibility: visible;
+  background-color: #2c2c2c;
+  transform: scaleX(1);
 }

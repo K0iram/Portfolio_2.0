@@ -15,6 +15,10 @@
   text-align: center;
 }
 
+.hero h2 {
+  font-weight: 700;
+}
+
 .blurb-container {
   width: 100%;
   margin: 0 auto;
