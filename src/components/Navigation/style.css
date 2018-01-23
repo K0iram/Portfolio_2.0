@@ -1,6 +1,5 @@
 .nav-bar {
   padding: 35px 50px 0;
-  position: sticky;
 }
 
 .nav-bar__links {
@@ -13,6 +12,7 @@
   display: flex;
   width: 300px;
   justify-content: space-around;
+  margin-bottom: 0;
 }
 
 .nav-link {
@@ -26,6 +26,7 @@
   position: relative;
   text-decoration: none;
   color: #2c2c2c;
+  font-weight: 200;
 }
 
 .nav-link p:before {
@@ -33,7 +34,7 @@
   position: absolute;
   width: 100%;
   height: 1px;
-  bottom: 1;
+  bottom: 0;
   left: 0;
   background-color: #333;
   visibility: hidden;
@@ -51,5 +52,5 @@
 * Active class for NavLinks
 */
 .active p {
-  border-bottom: 1px solid #333;
+  font-weight: 700;
 }
