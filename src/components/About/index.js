@@ -16,17 +16,14 @@ class About extends Component {
           me for because it, like my life, is always changing. I strive to make kick-ass web apps with 
           like-minded people that have a vision of changing the world.
         </p>
-        Download my resume <a href="https://s3.amazonaws.com/mariosbucket/mario_kennedy_resume.pdf" download>here</a>
 
-        <div className="insta-widget">
-          <h5>Check out my recent insta pics!</h5>
-          <iframe 
-            src="https://snapwidget.com/embed/499245" 
-            className="snapwidget-widget" 
-            allowTransparency="true" 
-            frameborder="0" 
-            scrolling="yes">
-          </iframe>
+        <div className="resume-download">
+          Download my resume 
+          <a href="https://s3.amazonaws.com/mariosbucket/mario_kennedy_resume.pdf" download>
+            <button className="download-btn">
+              here
+            </button>
+          </a>
         </div>
       </div>
     )

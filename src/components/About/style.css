@@ -10,14 +10,15 @@
 	font-weight: 300;
 }
 
-.insta-widget h5 {
-	margin: 25px 0;
+.resume-download {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.snapwidget-widget {
-	border: none; 
-	overflow: hidden; 
-	width: 100%;
+.download-btn {
+	margin-left: 5px;
+  padding: 0 15px;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
