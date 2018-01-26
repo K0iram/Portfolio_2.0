@@ -15,37 +15,50 @@ class Portfolio extends Component {
       <div className="work">
         <h4 className="section-title">Professional Work</h4>
         <div className="schoolProject-container project-section">
-          <figure className="project">
-            <div className="overlay"><h5>Wayfair Ideaboards</h5></div>
-            <a href="https://www.wayfair.com/ib/mkmaMBvNPw/0B268073B-3E8E-4B08-AA7D-1D3066CC278D" target='_blank'><img src={Ideaboard} alt="Ideaboards App"/></a>
-          </figure>
-          <figure className="project">
-            <div className="overlay"><h5>NeuroMotion Mighteor Sellpage</h5></div>
-            <a href="https://neuromotionlabs.com/get-mighteor/" target='_blank'><img src={NeuroMotion} alt="Mighteor Game"/></a>
-          </figure>
+          <a href="https://www.wayfair.com/ib/mkmaMBvNPw/0B268073B-3E8E-4B08-AA7D-1D3066CC278D" target='_blank'>
+            <figure className="project">
+              <div className="overlay"><h5>Wayfair Ideaboards</h5></div>
+              <img src={Ideaboard} alt="Ideaboards App"/>
+            </figure>
+          </a>
+
+          <a href="https://neuromotionlabs.com/get-mighteor/" target='_blank'>
+            <figure className="project">
+              <div className="overlay"><h5>NeuroMotion Mighteor Sellpage</h5></div>
+              <img src={NeuroMotion} alt="Mighteor Game"/>
+            </figure>
+          </a>
         </div>
-        
+
         <h4 className="section-title">School Work</h4>
         <div className='schoolProject-container project-section'>
-          <figure className="project">
-            <div className="overlay"><h5>Wicked Mad Libs</h5></div>
-            <a href="https://wicked-mad-libs.herokuapp.com" target='_blank'><img src={MadLibs} alt="Wicked Mad Libs"/></a>
-          </figure>
+          <a href="https://wicked-mad-libs.herokuapp.com" target='_blank'>
+            <figure className="project">
+              <div className="overlay"><h5>Wicked Mad Libs</h5></div>
+              <img src={MadLibs} alt="Wicked Mad Libs"/>
+            </figure>
+          </a>
 
-          <figure className="project">
-            <div className="overlay"><h5>Elimination Health App</h5></div>
-            <a href="https://mario7746.github.io/Elimination-Health" target='_blank'><img src={HealthApp} alt="Health App"/></a>
-          </figure>
+          <a href="https://mario7746.github.io/Elimination-Health" target='_blank'>
+            <figure className="project">
+              <div className="overlay"><h5>Elimination Health App</h5></div>
+              <img src={HealthApp} alt="Health App"/>
+            </figure>
+          </a>
 
-          <figure className="project">
-            <div className="overlay"><h5>Squad Merch Team Project</h5></div>
-            <a href="https://0squad.github.io/0squadmerch" target='_blank'><img src={StoreApp} alt="Squad Store"/></a>
-          </figure>
+          <a href="https://0squad.github.io/0squadmerch" target='_blank'>
+            <figure className="project">
+              <div className="overlay"><h5>Squad Merch Team Project</h5></div>
+              <img src={StoreApp} alt="Squad Store"/>
+            </figure>
+          </a>
 
-          <figure className="project">
-            <div className="overlay"><h5>Tic Tac Toe</h5></div>
-            <a href="https://mario7746.github.io/tic-tac-toe" target='_blank'><img src={TicTacToe} alt="TicTacToe"/></a>
-          </figure>
+          <a href="https://mario7746.github.io/tic-tac-toe" target='_blank'>
+            <figure className="project">
+              <div className="overlay"><h5>Tic Tac Toe</h5></div>
+              <img src={TicTacToe} alt="TicTacToe"/>
+            </figure>
+          </a>
         </div>
       </div>
     )
