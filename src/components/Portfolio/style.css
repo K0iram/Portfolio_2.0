@@ -15,15 +15,43 @@
 .project {
   border: 1px solid black;
   margin-bottom: 20px;
-}
-
-.project:hover {
-  transform: scale(1.1);
+  position: relative;
 }
 
 .project img {
   height: 200px;
   width: 380px;
+}
+
+.project:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.overlay {
+  height: 207px;
+  background-color: #00000095;
+  transition: background 0.5s;
+  width: 380px;
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h5 {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.5s;
+}
+
+.overlay:hover {
+  background-color: transparent;
+  color: transparent;
+}
+.overlay:hover h5 {
+  color: transparent;
 }
 
 .project-section:first-child{
@@ -46,6 +74,10 @@
     height: 150px;
     width: 330px;
   }
+
+  .overlay {
+    display: none;
+  }
 }
 
 /* iPads (portrait) ----------- */
@@ -53,5 +85,9 @@
   .project img {
     height: 150px;
     width: 330px;
+  }
+
+  .overlay {
+    display: none;
   }
 }
