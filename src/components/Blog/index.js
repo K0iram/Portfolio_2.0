@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import BlogPost from './blog-post'
+import UnderConstruction from '../Construction'
 
 import './style.css'
 
@@ -9,13 +9,7 @@ import './style.css'
 	  render() {
 	    return (
 	      <div>
-	     		<h1>MY BLOG</h1>
-	     		<div className="blog-post__container">
-						<BlogPost />
-						<BlogPost />
-						<BlogPost />
-						<BlogPost />
-	     		</div>
+	      <UnderConstruction />
 	      </div>
 	    )
 	  }

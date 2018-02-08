@@ -1,6 +1,5 @@
 		import React, { Component } from 'react'
-		import SignIn from './sign-in'
-		import PostForm from './post-form'
+		import UnderConstruction from '../Construction'
 
 		import './style.css'
 
@@ -10,8 +9,7 @@
 		  render() {
 		    return (
 		      <div className="admin-container">
-		      	<SignIn />
-		      	<PostForm />
+		      	<UnderConstruction />
 		      </div>
 		    )
 		  }
