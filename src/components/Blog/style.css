@@ -1,0 +1,27 @@
+.blog-post {
+	display: flex;
+	flex-direction: column;
+	max-width: 350px;
+	width: 100%;
+	text-align: left;
+	margin: 10px;
+}
+
+.blog-post__container {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 960px;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.blog-post__title {
+	display: flex;
+  margin: 0;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.blog-post__title h5 {
+	margin: 0;
+}

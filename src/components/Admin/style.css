@@ -1,0 +1,24 @@
+.admin-container {
+	margin-top: 10%;
+}
+
+.admin-form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.post-form form {
+  display: flex;
+  flex-direction: column;
+}

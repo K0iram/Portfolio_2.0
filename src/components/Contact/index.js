@@ -6,6 +6,16 @@ import './style.css'
 
 class Contact extends Component {
 
+  componentWillUnmount() {
+    window.drift.hide()
+  }
+
+  openDrift = () => {
+    window.drift.on('ready',function(api, payload) {
+      api.sidebar.open()
+    })
+  }
+
   render() {
     return (
       <div className="contact-container">
@@ -27,6 +37,9 @@ class Contact extends Component {
           >
             San Diego, CA 92101
           </a>
+        </div>
+        <div className="contact-item">
+          <button onClick={this.openDrift}>Chat Now!</button>
         </div>
       </div>
     )
