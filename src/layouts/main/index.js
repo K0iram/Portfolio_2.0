@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Navigation from '../../components/Navigation'
 import Footer from '../../components/Footer'
 
-
 import '../../css/skeleton.css'
 import './App.css'
 
