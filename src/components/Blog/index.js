@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import API from '../../api'
+import { fetchPosts } from 'api/posts'
 import BlogPost from './blog-post'
 
 import './style.css'
@@ -12,7 +12,7 @@ import './style.css'
 		}
 
 	componentDidMount() {
-		API.fetchPosts().then((res) => {
+		fetchPosts().then((res) => {
 			this.setState({
 				blogPosts: res.data.items,
 				featuredImages: res.data.includes.Asset
