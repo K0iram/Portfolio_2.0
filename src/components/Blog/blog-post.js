@@ -1,19 +1,19 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+
+import { resolveImageUrl } from 'api/posts'
+import ContentfulImage from 'components/ContentfulImage'
 import './style.css'
 
 const BlogPost = (props) => {
-	const { title } = props.fields
-	const { id } = props.sys
-	const imgURL = `https:${props.image.fields.file.url}?fit=scale`
-	const imgALT = props.image.fields.description
-
+	const { title, id, fields } = props
+	const { featuredImage } = fields
 
 	return(
 		<div className="blog-post">
 			<Link to={`/blog/${id}`}>
 				<div className="blog-post__img">
-					<img src={imgURL} alt={imgALT}/>
+					<ContentfulImage id={featuredImage.sys.id} alt="change me later" />
 				</div>
 				<div className="blog-post__title">
 					<h5>
