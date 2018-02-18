@@ -1,23 +1,20 @@
 import React, { Component } from 'react'
 import { fetchPosts } from 'api/posts'
-import BlogPost from './blog-post'
+import BlogPage from './blog-page'
 
 import './style.css'
 
 	class Blog extends Component {
 
 		state = {
-			blogPosts: [],
-			featuredImages: []
+			blogPosts: []
 		}
 
 	componentDidMount() {
 		fetchPosts().then((res) => {
 			this.setState({
-				blogPosts: res.data.items,
-				featuredImages: res.data.includes.Asset
+				blogPosts: res.data.items
 			})
-			console.log(res.data)
 		})
 	}
 
@@ -28,7 +25,7 @@ import './style.css'
 						<h1>Keep Up To Date</h1>
 		    	</div>
 		      <div className="blog-post__container">
-		      	{this.state.blogPosts.map((post, i) => <BlogPost {...post} image={this.state.featuredImages[i]} key={i}/>)}
+		      	{this.state.blogPosts.map((post, i) => <BlogPage {...post} key={i}/>)}
 		      </div>
 	    	</div>
 	    )

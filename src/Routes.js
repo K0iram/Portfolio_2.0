@@ -10,9 +10,8 @@ import Home from './components/Home'
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
 import About from './components/About'
+import BlogPage from './components/Blog/blog-post'
 import Blog from './components/Blog'
-import Admin from './components/Admin'
-
 
 const Routes = () => (
   <Router>
@@ -22,9 +21,9 @@ const Routes = () => (
         <Route path="/home" component={Home} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/about" component={About} />
-        <Route path="/blog" component={Blog} />
+        <Route exact path="/blog" component={Blog} />
+        <Route exact path="/blog/:postId" component={BlogPage} />
         <Route path="/contact" component={Contact} />
-        <Route path="/admin" component={Admin} />
       </Switch>
     </AppLayout>
   </Router>

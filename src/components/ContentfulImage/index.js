@@ -16,16 +16,17 @@ class ContentfulImage extends Component {
 		const { data } = await resolveImageUrl(id)
 
 		this.setState({
-			url: data.fields.file.url
+			url: data.fields.file.url,
+			alt: data.fields.title
 		})
+
 	}
 
 	render() {
-		const { alt } = this.props
-		const { url } = this.state
+		const { url, alt } = this.state
 
 		return (
-			<img src={url} alt="alt"/>
+			<img src={`${url}?fit=scale`} alt={alt}/>
 		)
 	}
 }

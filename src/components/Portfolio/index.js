@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import MadLibs from '../../images/madlibs.png'
-import HealthApp from '../../images/EliminationHealth.png'
-import StoreApp from '../../images/0squad.png'
-import TicTacToe from '../../images/tictactoe.png'
-import NeuroMotion from '../../images/Neuromotion.png'
-import Ideaboard from '../../images/ideaboards.png'
+import MadLibs from 'images/madlibs.png'
+import HealthApp from 'images/EliminationHealth.png'
+import StoreApp from 'images/0squad.png'
+import TicTacToe from 'images/tictactoe.png'
+import NeuroMotion from 'images/Neuromotion.png'
+import Ideaboard from 'images/ideaboards.png'
 import './style.css'
 
 
