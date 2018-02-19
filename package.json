@@ -9,6 +9,7 @@
     "node-sass": "^4.7.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-loading": "^1.0.3",
     "react-router-dom": "^4.1.1",
     "react-scrollable-anchor": "^0.4.2",
     "react-tooltip": "^3.3.0",
@@ -16,7 +17,6 @@
     "sass-loader": "^6.0.6"
   },
   "devDependencies": {
-    "react-svg-loader": "^2.1.0",
     "autoprefixer": "6.7.2",
     "babel-core": "6.22.1",
     "babel-eslint": "7.1.1",
@@ -49,6 +49,7 @@
     "postcss-loader": "1.2.2",
     "promise": "7.1.1",
     "react-dev-utils": "^0.5.2",
+    "react-svg-loader": "^2.1.0",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
     "webpack": "1.14.0",

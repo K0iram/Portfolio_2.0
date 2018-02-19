@@ -4,7 +4,8 @@ import { resolveImageUrl } from 'api/posts'
 class ContentfulImage extends Component {
 
 	state = {
-		url: 'http://putadefultimagehere.jpg'
+		url: 'http://placeholder.pics/svg/350/666666-C4C4C4/FFFFFF/%20',
+		alt: ''
 	}
 
 	async componentDidMount() {
@@ -19,14 +20,15 @@ class ContentfulImage extends Component {
 			url: data.fields.file.url,
 			alt: data.fields.title
 		})
-
 	}
 
 	render() {
 		const { url, alt } = this.state
 
 		return (
-			<img src={`${url}?fit=scale`} alt={alt}/>
+			<div>
+				<img src={`${url}?fit=scale`} alt={alt}/>
+			</div>
 		)
 	}
 }

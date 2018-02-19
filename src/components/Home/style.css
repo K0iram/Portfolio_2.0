@@ -1,27 +1,27 @@
 .home-container {
-  min-height: 45vh;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	min-height: 45vh;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .hero-container {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .hero {
-  text-align: center;
+	text-align: center;
 }
 
 .hero h2 {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .blurb-container {
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 25px;
-  text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 25px;
+	text-align: center;
 }

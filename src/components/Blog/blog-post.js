@@ -17,14 +17,14 @@ class BlogPost extends Component {
 	}
 
 	createMarkup = () => (
-  {__html: this.state.postBody}
+	{__html: this.state.postBody}
 	)
 
-  render() {
-    return (
-     <div dangerouslySetInnerHTML={this.createMarkup()} />
-    )
-  }
+	render() {
+		return (
+		 <div dangerouslySetInnerHTML={this.createMarkup()} />
+		)
+	}
 }
 
 export default BlogPost;
