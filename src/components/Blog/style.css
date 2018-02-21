@@ -1,79 +1,42 @@
-.blog-title {
+/*
+	Main Blog Page
+*/
+.blog__title {
 	text-align: center;
 }
 
-.blog-post {
-	display: flex;
-	flex-direction: column;
-	max-width: 350px;
-	width: 100%;
-	text-align: left;
-	margin: 10px;
-	max-height: 425px;
-}
-
-.blog-post img {
-	width: 350px;
-	
-}
-
-.blog-post__img {
-	height: 350px;
-	overflow: hidden;
-	animation: 1.2s ease-out 0s 1 slideInFromTop;
-}
-
-.blog-post:hover {
-	transform: scale(1.009)
-}
-
-.blog-post__container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.blog-post__container a {
+.blog-tile a {
 	text-decoration: none;
 	color: #000;
 }
 
-.blog-post__title {
+.blog-tile a:hover {
+	color: #888;
+}
+
+.blog__container {
 	display: flex;
-	margin: 0;
-	justify-content: space-between;
-	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1160px;
+	margin: 0 auto;
 }
 
-.blog-post__title h5 {
-	margin: 0;
+.loader {
+	padding: 40px;
 }
 
-.loader-gif {
-	padding: 20%;
+.blog-tile {
+	height: 100%;
+	margin: 5px;
 }
 
-.loader-gif__load {
-	height: 100px;
-	width: 100px;
-}
-
-.placeholder {
-	height: 350px;
+.blog-tile__image {
 	width: 350px;
-	background-color: grey;
+	max-height: 350px;
+	overflow: hidden;
 }
 
-@keyframes slideInFromTop {
-	0% {
-		height: 0;
-	}
-	100% {
-		height: 350px;
-	}
-}
-
-@keyframes fadein {
-		0% { opacity: 0; }
-		100% { opacity: 1; }
+.blog-tile__image img {
+	width: 350px;
 }

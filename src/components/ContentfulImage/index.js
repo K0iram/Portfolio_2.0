@@ -26,9 +26,7 @@ class ContentfulImage extends Component {
 		const { url, alt } = this.state
 
 		return (
-			<div>
-				<img src={`${url}?fit=scale`} alt={alt}/>
-			</div>
+			<img src={`${url}?fit=scale`} alt={alt}/>
 		)
 	}
 }

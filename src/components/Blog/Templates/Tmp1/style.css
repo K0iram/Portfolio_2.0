@@ -1,0 +1,31 @@
+.blog-post__container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.blog-post__hero {
+	margin: 0;
+}
+
+.blog-post__body {
+	text-align: left;
+}
+
+.blog-post__gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.blog-post__gallery img {
+	height: 300px;
+}
+
+.helpful-links {
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
+	margin-top: 20px;
+	height: 200px;
+	border: 1px solid #888;
+}

@@ -12,11 +12,11 @@ class Navigation extends Component {
 				<div className="nav-bar__links">
 					<ul className="nav-menu">
 						<li><NavLink to="/home" className="nav-link" activeClassName="active"><p>Home</p></NavLink></li>
-						
+
 						<li><NavLink to="/portfolio" className="nav-link" activeClassName="active"><p>Portfolio</p></NavLink></li>
-						
+
 						<li><NavLink to="/about" className="nav-link" activeClassName="active"><p>About</p></NavLink></li>
-						
+
 						<li><NavLink to="/contact" className="nav-link" activeClassName="active"><p>Contact</p></NavLink></li>
 					</ul>
 				</div>
@@ -27,4 +27,4 @@ class Navigation extends Component {
 
 
 
-export default Navigation;
+export default Navigation

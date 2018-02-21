@@ -9,7 +9,7 @@ class Home extends Component {
 	componentDidMount() {
 		window.drift.show()
 	}
-	
+
 	componentWillUnmount() {
 		window.drift.hide()
 	}
@@ -26,8 +26,8 @@ class Home extends Component {
 				</div>
 				<div className="blurb-container">
 					<p>
-						Need a website? 
-						<br/>    
+						Need a website?
+						<br/>
 						<Link to='/contact'><button>Lets talk!</button></Link>
 					</p>
 				</div>
@@ -36,4 +36,4 @@ class Home extends Component {
 	}
 }
 
-export default Home;
+export default Home

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import gitHubIcon from './icons/github.svg';
-import linkedInIcon from './icons/linkedin.svg';
-import fbIcon from './icons/facebook.svg';
-import instaIcon from './icons/instagram.svg';
-import soundCloudIcon from './icons/soundcloud.svg';
+import gitHubIcon from './icons/github.svg'
+import linkedInIcon from './icons/linkedin.svg'
+import fbIcon from './icons/facebook.svg'
+import instaIcon from './icons/instagram.svg'
+import soundCloudIcon from './icons/soundcloud.svg'
 import './style.css'
 
 
@@ -25,4 +25,4 @@ class Footer extends Component {
 }
 
 
-export default Footer;
+export default Footer

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { fetchPosts } from 'api/posts'
 import BlogPage from './blog-page'
-import ReactLoading from 'react-loading';
+import ReactLoading from 'react-loading'
 import './style.css'
- 
+
 
 	class Blog extends Component {
 
@@ -36,17 +36,17 @@ import './style.css'
 
 	render() {
 		return (
-			<div>
-				<div className="blog-title">
+			<div className="blog">
+				<div className="blog__title">
 					<h1>Keep Up To Date</h1>
 				</div>
-				<div className="blog-post__container">
+				<div className="blog__container">
+					{ this.state.blogPosts.map((post, i) => <BlogPage {...post} key={i}/>)}
 					{ !!this.state.isLoading &&
-						<div className="loader-gif">
+						<div className="loader">
 							<ReactLoading type="bubbles" color="#808080" className="loader-gif__load" />
 						</div>
 					}
-					{ this.state.blogPosts.map((post, i) => <BlogPage {...post} key={i}/>)}
 					<div className="error">
 						<h3>{this.state.errMessage}</h3>
 					</div>
@@ -56,4 +56,4 @@ import './style.css'
 	}
 }
 
-export default Blog;
+export default Blog
