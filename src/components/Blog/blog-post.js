@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { fetchPost } from 'api/posts'
-import Blog1 from './Templates/Tmp1'
-import Blog2 from './Templates/Tmp2'
-import Blog3 from './Templates/Tmp3'
+import Post from './Templates/Post'
 
 import "./style.css"
 
@@ -19,8 +17,9 @@ class BlogPost extends Component {
 				secondBody: type.secondaryBody || null,
 				links: type.referenceLinks || null,
 				media: type.postMedia,
-				heroImage: type.heroImage.sys.id || null
+				heroImage: type.hero
 			})
+			console.log(res.data.fields)
 		})
 	}
 
@@ -36,23 +35,10 @@ class BlogPost extends Component {
 		heroImage: ''
 	}
 
-	templateSwitch = () => {
-		switch(this.state.type) {
-    case 1:
-        return <Blog1 {...this.state}/>
-    case 2:
-        return <Blog2 {...this.state}/>
-    case 3:
-        return <Blog3 {...this.state}/>
-    default:
-        return <Blog1 {...this.state}/>
-		}
-	}
-
 	render() {
 		return (
 			<div className="blog-post">
-				{this.templateSwitch()}
+				<Post {...this.state}/>
 			</div>
 		)
 	}
