@@ -1,18 +1,14 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import marked from 'marked'
 import arrow from './icons/back.svg'
 import ContentfulImage from 'components/ContentfulImage'
+import Markdown from './markdown.js'
 import './style.css'
 
 class Post extends Component {
-  getMarkdownText(text) {
-      var rawMarkup = marked(text, {sanitize: true});
-      return { __html: rawMarkup };
-  }
 
 	render() {
-		const { title, description, body, secondBody, links, media, heroImage } = this.props
+		const { title, description, body, secondBody, media, heroImage } = this.props
 
 		return (
 			<div>
@@ -26,14 +22,19 @@ class Post extends Component {
 						<h3>{description}</h3>
 					</div>
 					<figure className="blog-post__hero">
-						<img src={heroImage} alt="main-hero-image"/>
+						<img src={heroImage} alt="main-hero"/>
 					</figure>
 					<div className="blog-post__body">
-						<div dangerouslySetInnerHTML={this.getMarkdownText(body)} />
+						<Markdown text={body} />
 					</div>
 					<div className="blog-post__gallery">
 						{media.map((img, i) => <ContentfulImage id={img.sys.id} key={`img-${i}`}/>)}
 					</div>
+					{secondBody !== null &&
+						<div className="blog-post__body">
+							<Markdown text={secondBody} />
+						</div>
+					}
 				</div>
 			</div>
 		)

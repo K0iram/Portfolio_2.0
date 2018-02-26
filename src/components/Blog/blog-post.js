@@ -19,7 +19,6 @@ class BlogPost extends Component {
 				media: type.postMedia,
 				heroImage: type.hero
 			})
-			console.log(res.data.fields)
 		})
 	}
 

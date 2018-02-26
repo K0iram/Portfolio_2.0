@@ -62,7 +62,15 @@
 	.blog-post__container {
 		margin: 0 20px;
 	}
-	.blog-post__gallery {
-		margin: 20px 0 20px;
+	.blog-post__gallery img {
+		max-width: 300px;
+		overflow: hidden;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.blog-post__container {
+		margin: 0 20px;
 	}
 }
