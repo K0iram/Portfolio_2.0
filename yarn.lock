@@ -4623,6 +4623,10 @@ react-loading@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/react-loading/-/react-loading-1.0.3.tgz#48c2cc9a83916853e4c166dd2e4ee07884823b68"
 
+react-marked@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/react-marked/-/react-marked-0.3.1.tgz#44a34e609f382c484bc4cfe875dda66a9a4b14e1"
+
 react-router-dom@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.1.1.tgz#3021ade1f2c160af97cf94e25594c5f294583025"
