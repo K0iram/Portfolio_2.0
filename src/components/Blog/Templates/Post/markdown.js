@@ -5,14 +5,14 @@ import marked from 'marked'
 
 class Markdown extends Component {
 
-	 static propTypes = {
+   static propTypes = {
     text: PropTypes.string.isRequired,
   }
 
   render() {
-    const text = marked(this.props.text);
+    const text = marked(this.props.text);
 
-    return <div dangerouslySetInnerHTML={ {__html: text} } />;
+    return <div dangerouslySetInnerHTML={ {__html: text} } />;
 
   }
 }

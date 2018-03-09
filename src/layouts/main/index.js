@@ -21,13 +21,13 @@ class AppLayout extends Component {
 
     render() {
       return (
-          <div className="App">
-            <Navigation />
-            <div className="main-content">
-              { this.renderChildren() }
-            </div>
-            <Footer />
+        <div className="App">
+          <Navigation />
+          <div className="main-content">
+            { this.renderChildren() }
           </div>
+          <Footer />
+        </div>
       );
     }
   }

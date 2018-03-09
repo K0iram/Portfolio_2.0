@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-	font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -8,5 +8,5 @@
 }
 
 .main-content {
-	flex: 1;
+  flex: 1;
 }

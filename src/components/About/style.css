@@ -1,29 +1,29 @@
 .profile-pic {
-	height: 250px;
+  height: 250px;
 }
 
 .about-container {
-	max-width: 720px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 50px 0;
-	font-weight: 300;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  font-weight: 300;
 }
 
 .resume-download {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .download-btn {
-	margin-left: 5px;
-	padding: 0 15px;
+  margin-left: 5px;
+  padding: 0 15px;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-	.about-container {
-		max-width: 300px;
-	}
+  .about-container {
+    max-width: 300px;
+  }
 }

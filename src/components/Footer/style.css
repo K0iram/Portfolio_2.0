@@ -1,19 +1,19 @@
 .social-links ul {
-		display: flex;
-		justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .social-links li {
-	margin: 20px;
+  margin: 20px;
 }
 
 .social-links li:hover {
-	transform: scale(1.08)
+  transform: scale(1.08)
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-	.social-links li {
-		margin: 10px;
-	}
+  .social-links li {
+    margin: 10px;
+  }
 }
