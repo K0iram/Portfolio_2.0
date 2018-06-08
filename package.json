@@ -12,6 +12,7 @@
     "react-dom": "^15.5.4",
     "react-loading": "^1.0.3",
     "react-marked": "^0.3.1",
+    "react-responsive-modal": "^3.0.3",
     "react-router-dom": "^4.1.1",
     "react-scrollable-anchor": "^0.4.2",
     "react-tooltip": "^3.3.0",

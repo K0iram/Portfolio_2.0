@@ -1,16 +1,16 @@
-import { ContentfulAPI } from "api"
+import { ContentfulPostAPI } from "api"
 const TYPE_ID = "blogPost"
 
 export const fetchPosts = async () => {
-  return ContentfulAPI.get(
+  return ContentfulPostAPI.get(
     `/entries?content_type=${TYPE_ID}&order=-sys.createdAt`
   )
 }
 
 export const fetchPost = async POST_ID => {
-  return ContentfulAPI.get(`/entries/${POST_ID}`)
+  return ContentfulPostAPI.get(`/entries/${POST_ID}`)
 }
 
 export const resolveImageUrl = async ASSET_ID => {
-  return ContentfulAPI.get(`/assets/${ASSET_ID}`)
+  return ContentfulPostAPI.get(`/assets/${ASSET_ID}`)
 }

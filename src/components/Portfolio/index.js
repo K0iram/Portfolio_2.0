@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import WorkPreview from './workPreview'
+import { fetchWorkPosts } from 'api/exampleWork'
 import MadLibs from 'images/madlibs.png'
 import HealthApp from 'images/EliminationHealth.png'
 import StoreApp from 'images/0squad.png'
@@ -9,12 +11,27 @@ import './style.css'
 
 
 class Portfolio extends Component {
+    state = {
+      workPosts: [],
+    }
+
+  componentDidMount() {
+    fetchWorkPosts().then((res) => {
+      this.setState({
+        workPosts: res.data.items
+      })
+    })
+    .catch((err) => {
+      console.error(err)
+    })
+  }
 
   render() {
     return (
       <div className="work">
         <h4 className="section-title">Professional Work</h4>
         <div className="schoolProject-container project-section">
+
           <a href="https://www.wayfair.com/ib/mkmaMBvNPw/0B268073B-3E8E-4B08-AA7D-1D3066CC278D" target='_blank'>
             <figure className="project">
               <div className="overlay"><h5>Wayfair Ideaboards</h5></div>
