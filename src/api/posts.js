@@ -11,6 +11,6 @@ export const fetchPost = async POST_ID => {
   return ContentfulPostAPI.get(`/entries/${POST_ID}`)
 }
 
-export const resolveImageUrl = async ASSET_ID => {
+export const resolvePostImageUrl = async ASSET_ID => {
   return ContentfulPostAPI.get(`/assets/${ASSET_ID}`)
 }

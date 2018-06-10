@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import { resolvePostImageUrl } from 'api/posts'
+import { resolveWorkImageUrl } from 'api/exampleWork'
 
-class ContentfulImage extends Component {
+class ContentfulWorkImage extends Component {
 
   state = {
-    url: 'http://placeholder.pics/svg/350/666666-C4C4C4/FFFFFF/%20',
+    url: '',
     alt: ''
   }
 
@@ -14,7 +14,7 @@ class ContentfulImage extends Component {
 
   resolveImage = async () => {
     const { id } = this.props
-    const { data } = await resolvePostImageUrl(id)
+    const { data } = await resolveWorkImageUrl(id)
 
     this.setState({
       url: data.fields.file.url,
@@ -31,4 +31,4 @@ class ContentfulImage extends Component {
   }
 }
 
-export default ContentfulImage
+export default ContentfulWorkImage

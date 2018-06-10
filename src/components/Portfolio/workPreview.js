@@ -1,19 +1,17 @@
 import React from 'react'
-import ContentfulImage from 'components/ContentfulImage'
+import ContentfulWorkImage from 'components/ContentfulImage/workImage'
 import './style.css'
 
 const WorkPreview = props => {
-  const { fields, sys } = props
-  const { mainPic, title } = fields
+  const { fields } = props
+  const { title, mainPic } = fields
 
   return (
-    <div className="blog-tile">
-      <div className="blog-tile__image">
-        <ContentfulImage id={mainPic.sys.id} />
-      </div>
-      <div className="blog-tile__title">
-        <h5>{title}</h5>
-      </div>
+    <div >
+      <figure className="project">
+        <div className="overlay"><h5>{title}</h5></div>
+        <ContentfulWorkImage id={mainPic.sys.id} />
+      </figure>
     </div>
   )
 }
