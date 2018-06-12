@@ -11,7 +11,10 @@ class Portfolio extends Component {
       modalOpen: false,
       currentPreviewId: '',
       currentPreviewTitle: '',
-      currentPreviewDescription: ''
+      currentPreviewDescription: '',
+      currentPreviewUrl: '',
+      currentPreviewCodeUrl: '',
+      currentTechStack: []
     }
 
   componentDidMount() {
@@ -26,14 +29,17 @@ class Portfolio extends Component {
   }
 
   openModal = ({ fields }) => {
-    const { title, mainPic, description, url } = fields
+    const { title, mockup, description, techStack, url, codeUrl } = fields
     this.setState({
       modalOpen: true,
-      currentPreviewId: mainPic.sys.id,
+      currentPreviewId: mockup.sys.id,
       currentPreviewTitle: title,
       currentPreviewDescription: description,
-      currentPreviewUrl: url
+      currentPreviewUrl: url,
+      currentPreviewCodeUrl: codeUrl || null,
+      currentTechStack: techStack
     })
+    console.log(techStack)
   }
 
   closeModal = () => {
@@ -45,7 +51,10 @@ class Portfolio extends Component {
       modalOpen,
       currentPreviewId,
       currentPreviewTitle,
-      currentPreviewDescription
+      currentPreviewDescription,
+      currentPreviewUrl,
+      currentPreviewCodeUrl,
+      currentTechStack
     } = this.state
 
     return (
@@ -62,6 +71,9 @@ class Portfolio extends Component {
           id={currentPreviewId}
           title={currentPreviewTitle}
           description={currentPreviewDescription}
+          techStack={currentTechStack}
+          url={currentPreviewUrl}
+          codeUrl={currentPreviewCodeUrl}
           modalOpen={modalOpen}
           closeModal={this.closeModal}
           />

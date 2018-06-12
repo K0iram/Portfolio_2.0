@@ -7,7 +7,7 @@ const WorkPreview = props => {
   const { title, mainPic } = fields
 
   return (
-    <div >
+    <div>
       <figure className="project">
         <div className="overlay"><h5>{title}</h5></div>
         <ContentfulWorkImage id={mainPic.sys.id} />

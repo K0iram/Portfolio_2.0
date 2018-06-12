@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { resolveWorkImageUrl } from 'api/exampleWork'
+import './style.css'
 
 class ContentfulWorkImage extends Component {
 
@@ -26,7 +27,9 @@ class ContentfulWorkImage extends Component {
     const { url, alt } = this.state
 
     return (
-      <img src={`${url}?fit=scale`} alt={alt}/>
+      <div className="iframe-loader">
+        <img src={`${url}?fit=scale`} alt={alt}/>
+      </div>
     )
   }
 }
