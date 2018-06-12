@@ -34,9 +34,9 @@ class PreviewModal extends Component {
                 </ul>
               </div>
               <div className="project-links">
-                <a href={url}>Check out the site</a>
+                <a href={url} target="_blank">Check out the site</a>
                 {!!codeUrl &&
-                  <a href={codeUrl}>Check out the code</a>
+                  <a href={codeUrl} target="_blank">Check out the code</a>
                 }
               </div>
             </div>

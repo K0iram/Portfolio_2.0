@@ -49,6 +49,16 @@
   padding-top: 35px;
 }
 
+.project-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+}
+
+.project-links a:hover {
+  color: #2c2c2c;
+}
+
 .styles_modal__gNwvD {
   position: relative;
 }
