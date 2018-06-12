@@ -39,7 +39,6 @@ class Portfolio extends Component {
       currentPreviewCodeUrl: codeUrl || null,
       currentTechStack: techStack
     })
-    console.log(techStack)
   }
 
   closeModal = () => {
@@ -62,8 +61,8 @@ class Portfolio extends Component {
         <h4 className="section-title">Professional Work</h4>
         <div className="schoolProject-container">
           { this.state.workPosts.map((item, i) =>
-            <div className="workPreview" onClick={() => {this.openModal(item)}}>
-              <WorkPreview {...item} key={i}/>
+            <div className="workPreview" key={i} onClick={() => {this.openModal(item)}}>
+              <WorkPreview {...item}/>
             </div>
           )}
         </div>

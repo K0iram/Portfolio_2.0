@@ -28,8 +28,8 @@ class PreviewModal extends Component {
               <div className="project-stack">
                 <h3>Tech Stack</h3>
                 <ul>
-                  {techStack.map(function(listValue){
-                  return <li>{listValue}</li>
+                  {techStack.map((listValue, i) => {
+                  return <li key={i}>{listValue}</li>
                 })}
                 </ul>
               </div>
