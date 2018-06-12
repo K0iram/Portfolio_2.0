@@ -63,6 +63,10 @@
   position: relative;
 }
 
+.project-image .iframe-loader {
+  padding: 20px 0;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
   .project-container {
