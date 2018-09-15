@@ -17,7 +17,12 @@ class PreviewModal extends Component {
           <div className="project-container">
             <div className="project-left">
               <div className="project-image">
-                <ContentfulWorkImage id={id} />
+                { id ? (
+                  <ContentfulWorkImage id={id} />
+                ) : (
+                  <img src='https://www.placehold.it/150x100'/>
+                )
+                }
               </div>
               <div className="project-description">
                 <h3>{title}</h3>

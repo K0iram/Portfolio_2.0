@@ -1,9 +1,16 @@
 import { ContentfulWorkAPI } from "api"
-const TYPE_ID = "workPost"
+const WORK_TYPE_ID = "workPost"
+const PROJECT_TYPE_ID = "projectPost"
 
 export const fetchWorkPosts = async () => {
   return ContentfulWorkAPI.get(
-    `/entries?content_type=${TYPE_ID}&order=sys.createdAt`
+    `/entries?content_type=${WORK_TYPE_ID}&order=sys.createdAt`
+  )
+}
+
+export const fetchProjectPosts = async () => {
+  return ContentfulWorkAPI.get(
+    `/entries?content_type=${PROJECT_TYPE_ID}&order=sys.createdAt`
   )
 }
 

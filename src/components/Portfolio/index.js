@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PreviewModal from 'components/Modal'
-import { fetchWorkPosts } from 'api/exampleWork'
+import { fetchWorkPosts, fetchProjectPosts } from 'api/exampleWork'
 import WorkPreview from './workPreview'
 import './style.css'
 
@@ -8,6 +8,7 @@ import './style.css'
 class Portfolio extends Component {
     state = {
       workPosts: [],
+      projectPosts: [],
       modalOpen: false,
       currentPreviewId: '',
       currentPreviewTitle: '',
@@ -26,13 +27,23 @@ class Portfolio extends Component {
     .catch((err) => {
       console.error(err)
     })
+
+    fetchProjectPosts().then((res) => {
+      this.setState({
+        projectPosts: res.data.items
+      })
+    })
+    .catch((err) => {
+      console.error(err)
+    })
   }
 
   openModal = ({ fields }) => {
     const { title, mockup, description, techStack, url, codeUrl } = fields
+    const mockupID = mockup ? mockup.sys.id : null
     this.setState({
       modalOpen: true,
-      currentPreviewId: mockup.sys.id,
+      currentPreviewId: mockupID,
       currentPreviewTitle: title,
       currentPreviewDescription: description,
       currentPreviewUrl: url,
@@ -58,13 +69,23 @@ class Portfolio extends Component {
 
     return (
       <div className="work">
-        <h4 className="section-title">Professional Work</h4>
-        <div className="schoolProject-container">
-          { this.state.workPosts.map((item, i) =>
-            <div className="workPreview" key={i} onClick={() => {this.openModal(item)}}>
-              <WorkPreview {...item}/>
-            </div>
-          )}
+        <div className="work-container">
+          <h4 className="section-title">Professional Work</h4>
+          <div className="work-project-container">
+            { this.state.workPosts.map((item, i) =>
+              <div className="workPreview" key={i} onClick={() => {this.openModal(item)}}>
+                <WorkPreview {...item}/>
+              </div>
+            )}
+          </div>
+          <h4 className="section-title">Personal Projects</h4>
+          <div className="schoolProject-container">
+            { this.state.projectPosts.map((item, i) =>
+              <div className="workPreview" key={i} onClick={() => {this.openModal(item)}}>
+                <WorkPreview {...item}/>
+              </div>
+            )}
+          </div>
         </div>
         <PreviewModal
           id={currentPreviewId}
