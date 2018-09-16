@@ -20,7 +20,7 @@ class PreviewModal extends Component {
                 { id ? (
                   <ContentfulWorkImage id={id} />
                 ) : (
-                  <img src='https://www.placehold.it/150x100'/>
+                  <img src='https://www.placehold.it/150x100' alt=''/>
                 )
                 }
               </div>

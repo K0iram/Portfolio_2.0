@@ -1,7 +1,18 @@
 .work {
   margin-bottom: 50px;
 }
-.schoolProject-container {
+.school-project-container {
+  height: 100%;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.work-project-container {
   height: 100%;
   align-items: center;
   max-width: 800px;

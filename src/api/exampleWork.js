@@ -4,13 +4,13 @@ const PROJECT_TYPE_ID = "projectPost"
 
 export const fetchWorkPosts = async () => {
   return ContentfulWorkAPI.get(
-    `/entries?content_type=${WORK_TYPE_ID}&order=sys.createdAt`
+    `/entries?content_type=${WORK_TYPE_ID}&order=-sys.updatedAt`
   )
 }
 
 export const fetchProjectPosts = async () => {
   return ContentfulWorkAPI.get(
-    `/entries?content_type=${PROJECT_TYPE_ID}&order=sys.createdAt`
+    `/entries?content_type=${PROJECT_TYPE_ID}&order=-sys.updatedAt`
   )
 }
 

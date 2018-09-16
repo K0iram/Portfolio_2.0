@@ -79,7 +79,7 @@ class Portfolio extends Component {
             )}
           </div>
           <h4 className="section-title">Personal Projects</h4>
-          <div className="schoolProject-container">
+          <div className="school-project-container">
             { this.state.projectPosts.map((item, i) =>
               <div className="workPreview" key={i} onClick={() => {this.openModal(item)}}>
                 <WorkPreview {...item}/>
