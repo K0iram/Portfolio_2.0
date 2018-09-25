@@ -12,6 +12,7 @@ import Portfolio from './components/Portfolio'
 import About from './components/About'
 import BlogPage from './components/Blog/blog-post'
 import Blog from './components/Blog'
+import DownPage from './components/DownPage'
 
 const Routes = () => (
   <Router>
@@ -19,7 +20,7 @@ const Routes = () => (
     	<Switch>
         <Route path="/" exact component={Home} />
         <Route path="/home" component={Home} />
-        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/portfolio" component={DownPage} />
         <Route path="/about" component={About} />
         <Route exact path="/blog" component={Blog} />
         <Route exact path="/blog/:postId" component={BlogPage} />
