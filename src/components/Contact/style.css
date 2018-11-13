@@ -39,6 +39,23 @@
   bottom: 50%;
 }
 
+.user-info {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.subject-message {
+  width: 125px;
+}
+
+.user-message {
+  width: 300px !important;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .contact-hero img {

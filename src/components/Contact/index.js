@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import EmailForm from './emailForm'
 
 import './style.css'
 
@@ -33,6 +33,8 @@ class Contact extends Component {
           San Diego, CA 92101
           </a>
         </div>
+        <EmailForm/>
+
       </div>
     )
   }

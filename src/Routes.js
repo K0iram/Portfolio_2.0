@@ -3,8 +3,6 @@ import Router from 'react-router-dom/HashRouter'
 import Route from 'react-router-dom/Route'
 import Switch from 'react-router-dom/Switch'
 
-
-
 import AppLayout from './layouts/main'
 import Home from './components/Home'
 import Contact from './components/Contact'
@@ -12,7 +10,6 @@ import Portfolio from './components/Portfolio'
 import About from './components/About'
 import BlogPage from './components/Blog/blog-post'
 import Blog from './components/Blog'
-import DownPage from './components/DownPage'
 
 const Routes = () => (
   <Router>
