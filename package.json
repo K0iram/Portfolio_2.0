@@ -8,6 +8,7 @@
     "contentful": "^5.1.1",
     "moment": "^2.20.1",
     "node-sass": "^4.7.2",
+    "postmark": "^2.2.0",
     "prop-types": "^15.6.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.2",
