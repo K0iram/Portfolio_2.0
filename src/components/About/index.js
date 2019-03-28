@@ -19,7 +19,7 @@ class About extends Component {
 
         <div className="resume-download">
           Download my resume
-          <a href="https://s3.amazonaws.com/mariosbucket/mario_kennedy_resume.pdf" download>
+          <a href="https://s3.amazonaws.com/mariosbucket/mario_kk_resume.pdf" download>
             <button className="download-btn">
               here
             </button>
